@@ -1,0 +1,33 @@
+
+./KdrTraub1994ax.c: ../KdrTraub1994ax.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) KdrTraub1994ax.mod -o "/home/szabobogi/BC_modells/CA1_Vladimirov_2013/x86_64")
+
+./KdrTraub1994ax.o: ./KdrTraub1994ax.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./KdrTraub1994sd.c: ../KdrTraub1994sd.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) KdrTraub1994sd.mod -o "/home/szabobogi/BC_modells/CA1_Vladimirov_2013/x86_64")
+
+./KdrTraub1994sd.o: ./KdrTraub1994sd.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./NafTraub1994ax.c: ../NafTraub1994ax.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) NafTraub1994ax.mod -o "/home/szabobogi/BC_modells/CA1_Vladimirov_2013/x86_64")
+
+./NafTraub1994ax.o: ./NafTraub1994ax.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./NafTraub1994sd.c: ../NafTraub1994sd.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) NafTraub1994sd.mod -o "/home/szabobogi/BC_modells/CA1_Vladimirov_2013/x86_64")
+
+./NafTraub1994sd.o: ./NafTraub1994sd.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

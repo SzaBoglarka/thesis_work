@@ -1,0 +1,32 @@
+
+The ISI_values extracted using the BluePhyEfe extractor, only
+I had to add the folllowing lines after 'fet_vals is extracted' in the
+extract_features function to save the all_ISI_values results
+before the extractor makes some statistics on it
+(eventually it would only return the mean and std of the ISI_values as a result).
+So here we save the all_ISI_values of each current so that we can use them later,
+and later choose the current amplitude we nead (e.g. at the steady_state_current)
+to make figures, etc.
+MOUSE and RAT folder names have to be changed in the out_path
+
+(at line 590)
+                     # delete this part
+                    if fel_vals[0]['all_ISI_values'] is not None:
+                        all_isi_values_data = {
+                            'all_ISI_values': fel_vals[0]['all_ISI_values'].tolist(),
+                            'time_to_first_spike': fel_vals[0]['time_to_first_spike'].tolist()
+                        }
+                        with open(
+                                f'/home/szabobogi/BluePyEfe_standard_features/BluePyEfe/FINAL_PV_PTI_data/MOUSE_and_RAT_exp_data_COMPARISON/ISI_values/MOUSE/{cellname}_{amp}.json',
+                                'w') as f:
+                            json.dump(all_isi_values_data, f)
+
+
+These additional lines were only added for this specific reason,
+and after that they were deleted from the extractor.
+
+Additional info:
+The standard currents now were extracted WITHOUT the baseline correction,
+so that we can use the standard-amplitude ISI_values automatically.
+Probably we won't need the current amplitudes for the ISI_values figures,
+BUT if we do, we would have to correct them with the baseline currents !!!

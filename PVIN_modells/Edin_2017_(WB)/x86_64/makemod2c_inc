@@ -1,0 +1,9 @@
+
+./hhI.c: ../hhI.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) hhI.mod -o "/home/szabobogi/BC_modells/Edin_2017_(WB)/x86_64")
+
+./hhI.o: ./hhI.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

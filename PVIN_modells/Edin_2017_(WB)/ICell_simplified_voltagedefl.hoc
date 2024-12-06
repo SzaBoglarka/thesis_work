@@ -1,0 +1,172 @@
+// This model is slightly modified to fit our validation research purposes about hippocampal one cell FS BC models
+// The original model is from: Edin et al (2017)
+// ModelDB Accession: 98017
+
+/* ICell is a model of a hippocampal interneuron, such as described in Wang
+* and Buszaki, Gamma Oscillation by Synaptic Inhibition in a Hippocampal 
+* Interneuronal Network Model, J.Neurosci, 1996, 16(20):6402-6413.
+
+* ICell is a one-compartment model. Its area is 100um^2 to equal density 
+* and absolute currents. Its characteristic features are: 
+*
+* 1) AHP of -15 mV relative to the spike threshold of -55 mV, which is 
+* due to a small maximum gK and a fast IK gating process.  
+* 2) Ability to fire repetitive spikes at high frequencies.
+*
+*
+* All internal representations of currents and conductances are in nA and uS, 
+* as is the case in most Neuron mechanisms, but functions use the units
+* uA / cm2 and mS / cm2, just like in the original article. 
+*
+* The model has six types of synapses in every compartment, one summating
+* and one non-summating synapse of types GABA, AMPA and NMDA. The summating
+* synapses represent external stimulation to the cell (many uncorrelated
+* sources of low intensity), and the non-summating synapses represent
+* synapses between the cells of a net.
+*
+* Synapses are stored in a vector. Note that only synapses with netcons 
+* connected to them are actually made, so as to reduce simulation time. 
+*
+* Every cell has two types of IDs. One is a public string, "ICell", so that a 
+* program can tell it apart from other types of cells. A second ID is an 
+* int specified by the program to help identify an unknown cell.
+*
+* Author: Fredrik Edin, 2003.
+* Address: freedin@nada.kth.se
+*
+*/
+
+begintemplate ICell 
+    
+    /* public functions */
+    /* set functions */
+    public setWsyn         // sets synaptic weights
+    public setV            // sets membrane potential
+    public setIapp         // sets excitatory drive of cells
+    public activate_syn    // activates synapses
+    public connect_pre     // connects the cell to a presynaptic cell
+    public disconnectCell  // disconnects the cell from all other cells
+    public addCue          // adds a cue to the cell
+    public poissonExternal // sets excitatory poisonnian spike train drive
+    public setID           // sets the secondary ID of the cell
+    
+    
+    /* public objects and variables */
+    public soma     // The soma
+    public vvec     // Voltage trace vector
+    public pre_list // List with NetCons
+    public iapp     // Excitatory drive objects
+    public syn      // Array with synapses
+    public ID       // ID object of the cell = "ICell"
+    public ID_2     // Second ID of the cell. Can be set by the user
+    public synCnt   // The number of synapses in the cell
+    public RELAR    // Vector with relative compartment sizes
+    public cue      // Vector with cues
+    public netstim  // 
+    
+    /* objects */
+    create soma        // The soma
+    objref vvec        // Voltage trace vector
+    objref pre_list[6] // Array with NetCons Lists (pre_list0-pre_list4)
+    objref pre_list0
+    objref pre_list1
+    objref pre_list2
+    objref pre_list3
+    objref pre_list4
+    objref pre_list5
+    strdef ID           // ID of the cell = "ICell"
+    objref RELAR        // Vector with relative compartment sizes
+    objref iapp         // Excitatory drive object
+    objref syn[6]       // Array with synapses
+    objref net_c        // Temporary NetCon object
+    objref cue          // List with cues
+    objref cuepos       // Vector with cue positions
+    objref netstim      // An excitatory poissonian spike train source
+    objref cell         // A presynaptic cell
+    strdef str          // Temporary string
+    
+    /* Creates a new ICell object 
+    *
+    *(Arg 1, speed : rate of K-channel activation and Na-channel inactivation)
+    *(Arg 2, syn.e : synaptic reversal potential)
+    *(Arg 3, recV  : Record voltage trace of cell. 1 = yes, 0 or nothing = no)
+    *(Arg 4, recSpk: Record spike times of cell. 1 = yes, 0 or nothing = no)
+    */
+    proc init() {
+	
+	synCnt = 6
+	
+	vvec = new Vector()
+	cue = new List()
+	cuepos = new Vector()
+	ID = "ICell"
+	netstim = new List()
+		
+	/* Initial constants, etc */
+	// AREA - eredeti: 100
+	// AREA - voltage deflection alapján: 15848
+	// AREA - rheobase alapján: 115000 (111111)
+	AREA = 15848	/* 1e-6 cm2 area */
+	pre_list0 = new List()
+	pre_list1 = new List()
+	pre_list2 = new List()
+	pre_list3 = new List()
+	pre_list4 = new List()
+	pre_list5 = new List()
+	objref pre_list[synCnt]
+	pre_list[0] = pre_list0
+	pre_list[1] = pre_list1
+	pre_list[2] = pre_list2
+	pre_list[3] = pre_list3
+	pre_list[4] = pre_list4
+	pre_list[5] = pre_list5
+	
+	RELAR = new Vector(1,1) /* For compatibility, easy when using cells with several compartments */
+	
+	soma {
+	    
+	    /* geometry: parameters specified for a 100um² area*/
+	    nseg = 1
+	    diam = sqrt( AREA / PI )
+	    L = diam
+	    /* Conversion uA/cm2 -> nA and mS/cm2 -> uS */
+	    f_surf = area(0.5) / 100000
+	    /* Conversion uA/cm2 -> mA/cm2 and mS/cm2 -> S/cm2 */
+	    f_conv = 1 / 1000
+	    
+	    /* Insert channels */
+	    insert hhI
+	    ek  = -90
+	    ena = 55
+	    
+    
+	}
+    }
+    
+    
+
+    
+    /* Sets the membrane potential of the cells 
+    * 
+    * Arg 1, v: membrane potential in mV */
+    proc setV() {
+	soma.v(0.5) = $1
+	//print "ICell.setV", soma.v(0.5)
+    }
+
+    /* Sets the excitatory drive of the cell 
+    *
+    * Arg: $1    Current in uA/cm2 
+    * Arg: $2    Start time of current (ms)
+    * Arg: $3    Duration of current (ms) */
+    proc setIapp() {
+	soma {
+	    iapp.amp = $1 * f_surf  /* Current in nA */
+	    iapp.del = $2	    
+	    iapp.dur = $3
+	}
+    }
+ 
+    
+endtemplate ICell
+   

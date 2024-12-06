@@ -1,0 +1,31 @@
+// This model is slightly modified to fit our validation research purposes about one cell FS BC models
+// The original model is from: Hu et al. 2018
+
+/* hoc file for test of Hu and Jonas model in single compartment neurons */ 
+/* minor revision of mod file to make changes in temperature effective */ 
+/* PJ, 03.03.2020 */ 
+
+
+create soma
+//soma.L = 100
+//soma.diam = 100
+soma.L = 46
+soma.diam = 46
+soma.Ra = 170 
+soma.nseg = 1
+
+cm = 0.9
+access soma
+//tstop = 800
+dt = 0.005
+celsius = 35 
+insert hhBC
+//objectvar myStim 
+//myStim = new IClamp(0.5)
+ 
+// myStim.del = 100
+// myStim.dur = 500
+// myStim.amp = 4
+
+psection()
+

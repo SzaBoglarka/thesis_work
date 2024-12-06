@@ -1,0 +1,81 @@
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//
+//  NOTICE OF COPYRIGHT AND OWNERSHIP OF SOFTWARE
+//
+// Copyright 2010, The University Of Michigan
+// 	
+//   All rights reserved.
+//   For research use only; commercial use prohibited.
+//   No Distribution without permission of William Stacey
+//   wstacey@umich.edu
+//
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//This is for the basket cells based on the paper
+// 
+// Tort, A. B., Rotstein, H. G., Dugladze, T., et al. (2007). On the formation of gamma-coherent cell assemblies by oriens lacunosum-moleculare interneurons in the hippocampus. Proc Natl Acad Sci U S A,.
+//   
+
+
+begintemplate Bwb
+
+create soma
+
+proc init() {
+    
+    createCell()
+    
+    access soma  }
+
+external cvode
+
+// PUBLIC OBJECTS
+public soma
+
+//PUBLIC METHODS
+public position, getTotalArea
+
+create soma    
+
+strdef cmd
+
+
+// ========================================================================
+//
+// getTotalArea()
+//
+// ========================================================================
+func getTotalArea() {
+	
+	return totalArea
+}
+
+
+
+// =================================================================================================
+//
+//createCell()
+//
+// =================================================================================================
+proc createCell() {
+
+    totalArea = 15848 // um2
+
+    soma {
+        nseg  = 1
+        cm    = 1      // uF/cm2
+        diam  = sqrt(totalArea) // um
+        L     =  diam/PI  // um
+    
+        insert pas
+            e_pas = -65     // mV
+            g_pas = 0.1e-3  // S/cm2 
+  
+        insert Nafbwb
+        insert Kdrbwb
+    }
+}
+
+
+
+endtemplate Bwb

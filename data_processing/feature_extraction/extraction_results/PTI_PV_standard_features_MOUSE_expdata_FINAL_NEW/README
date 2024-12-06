@@ -1,0 +1,25 @@
+
+PTI_PV_standard_features_MOUSE_expdata_FINAL had to be regenerated
+so that the cell measurements with different protocols, and
+the different number of parallel measurements from the cells
+do NOT disturb the final feature results.
+This is the new version. Use this one!
+
+Changes:
+The cell data folders were restructured in order to get proper feature results.
+Cell measurements with different measurement protocols are now first processed separately.
+The features from these cells extracted separately.
+Therefore extraction results will be in different measurement folders.
+E.g. in d190218_0102, d190218_0103, d190218_0104, and d190218_0105
+This separation is crucial for the further processing steps.
+
+As a next step, for these cells (d190218_01, r190531_02 and r190531_04)
+from the measurement folders and measurement features.json we create
+the cell's folder and the cells features.json file,
+which contains the mean of the measurement feature values and there std-s.
+
+As a last step, now that we have all of the proper cell folders and their features.json
+file, we remake the overall features.json files using the data of each cell.
+We create the corrected_features.json file from the proper cell feature values and their std-s.
+
+In the following, use only this corrected_features.json file !

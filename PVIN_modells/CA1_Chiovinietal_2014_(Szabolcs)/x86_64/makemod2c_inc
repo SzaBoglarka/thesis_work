@@ -1,0 +1,25 @@
+
+./CaT4.c: ../CaT4.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) CaT4.mod -o "/home/szabobogi/BC_modells/CA1_Chiovinietal_2014_(Szabolcs)/x86_64")
+
+./CaT4.o: ./CaT4.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./HH2.c: ../HH2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) HH2.mod -o "/home/szabobogi/BC_modells/CA1_Chiovinietal_2014_(Szabolcs)/x86_64")
+
+./HH2.o: ./HH2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./LeakConductance.c: ../LeakConductance.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) LeakConductance.mod -o "/home/szabobogi/BC_modells/CA1_Chiovinietal_2014_(Szabolcs)/x86_64")
+
+./LeakConductance.o: ./LeakConductance.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

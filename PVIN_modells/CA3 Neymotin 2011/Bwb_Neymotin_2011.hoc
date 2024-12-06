@@ -1,0 +1,32 @@
+begintemplate Bwb
+
+create soma
+
+proc init() {
+	set_morphology()
+	set_conductances()
+}
+
+proc set_morphology() {
+    total_area = 10000 // um2
+    soma nseg = 1
+    soma cm = 1 // uF/cm2
+    diam = sqrt(total_area) // um
+    L = diam / PI // um
+}
+
+proc set_conductances() {
+
+	soma { 
+	
+	insert pas
+    e_pas = -65 // mV
+    g_pas = 0.1e-3 // S/cm2
+
+    insert Nafbwb
+    insert Kdrbwb
+	
+	}
+}
+
+endtemplate Bwb

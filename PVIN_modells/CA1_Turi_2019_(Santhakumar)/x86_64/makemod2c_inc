@@ -1,0 +1,73 @@
+
+./bgka.c: ../bgka.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) bgka.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./bgka.o: ./bgka.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cagk.c: ../cagk.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cagk.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./cagk.o: ./cagk.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cal.c: ../cal.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cal.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./cal.o: ./cal.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ccanl.c: ../ccanl.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ccanl.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./ccanl.o: ./ccanl.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./gskch.c: ../gskch.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) gskch.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./gskch.o: ./gskch.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ichan2bc.c: ../ichan2bc.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ichan2bc.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./ichan2bc.o: ./ichan2bc.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kca.c: ../kca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kca.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./kca.o: ./kca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./LcaMig.c: ../LcaMig.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) LcaMig.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./LcaMig.o: ./LcaMig.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nca.c: ../nca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nca.mod -o "/home/szabobogi/BC_modells/CA1_Turi_2019_(Santhakumar)/x86_64")
+
+./nca.o: ./nca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

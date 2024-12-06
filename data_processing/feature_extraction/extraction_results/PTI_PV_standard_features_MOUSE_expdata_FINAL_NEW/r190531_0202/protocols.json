@@ -1,0 +1,191 @@
+{
+  "step_0.22": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.22, "thresh_perc": 0.22, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.44": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.44, "thresh_perc": 0.44, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.55": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.55, "thresh_perc": 0.55, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.275": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.275, "thresh_perc": 0.275, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.66": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.66, "thresh_perc": 0.66, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.33": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.33, "thresh_perc": 0.33, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.022": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.022, "thresh_perc": -0.022, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.099": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.099, "thresh_perc": 0.099, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.044": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.044, "thresh_perc": -0.044, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.077": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.077, "thresh_perc": 0.077, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.066": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.066, "thresh_perc": -0.066, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.055": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.055, "thresh_perc": 0.055, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.033": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.033, "thresh_perc": 0.033, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.088": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.088, "thresh_perc": -0.088, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.11": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.11, "thresh_perc": -0.11, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.011": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.011, "thresh_perc": 0.011, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.011": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.011, "thresh_perc": -0.011, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.11": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.11, "thresh_perc": 0.11, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.033": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.033, "thresh_perc": -0.033, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.088": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.088, "thresh_perc": 0.088, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.055": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.055, "thresh_perc": -0.055, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.066": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.066, "thresh_perc": 0.066, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.044": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.044, "thresh_perc": 0.044, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.077": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.077, "thresh_perc": -0.077, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_-0.099": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": -0.099, "thresh_perc": -0.099, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.165": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.165, "thresh_perc": 0.165, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  },
+  "step_0.022": {
+    "type": "StepProtocol",
+    "stimuli": {
+      "step": {"delay": 200, "amp": 0.022, "thresh_perc": 0.022, "duration": 800, "totduration": NaN},
+      "holding": {"delay": 0.0, "amp": 0.0, "duration": NaN, "totduration": NaN}
+    }
+  }
+}

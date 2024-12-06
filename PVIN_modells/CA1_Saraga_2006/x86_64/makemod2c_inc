@@ -1,0 +1,9 @@
+
+./hh.c: ../hh.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) hh.mod -o "/home/szabobogi/BC_modells/CA1_Saraga_2006/x86_64")
+
+./hh.o: ./hh.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

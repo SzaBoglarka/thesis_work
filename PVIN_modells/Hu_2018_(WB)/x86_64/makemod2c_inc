@@ -1,0 +1,25 @@
+
+./hhBC.c: ../hhBC.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) hhBC.mod -o "/home/szabobogi/BC_modells/Hu_2018_(WB)/x86_64")
+
+./hhBC.o: ./hhBC.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./locus.c: ../locus.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) locus.mod -o "/home/szabobogi/BC_modells/Hu_2018_(WB)/x86_64")
+
+./locus.o: ./locus.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./syn2.c: ../syn2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) syn2.mod -o "/home/szabobogi/BC_modells/Hu_2018_(WB)/x86_64")
+
+./syn2.o: ./syn2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

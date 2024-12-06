@@ -1,0 +1,45 @@
+/////////////////////////////////Basket//////////////////////////
+
+begintemplate IzhiCell_BC
+	public soma
+	create soma
+
+	public IzhiSoma
+	objref IzhiSoma
+
+	public setv
+	proc setv() {
+	forall v = $1
+	}
+	
+	proc init() {
+		/////// topology ////////
+		create soma
+		
+		/////// geometry ////////
+		soma {nseg=1 L=40 diam=40} // changed L & diam
+					
+		/////// biophysics ///////
+		soma {
+			cm= 1.4//12		//(microF/cm2)
+			Ra= 210		//(ohm-cm)
+
+			IzhiSoma = new IZH(0.5)
+	
+			IzhiSoma.k = 0.0015
+			IzhiSoma.vr = -65
+			IzhiSoma.vt = -50
+			IzhiSoma.a = 0.9  
+			IzhiSoma.b = .002
+			IzhiSoma.vpeak = 28
+			IzhiSoma.c = -80
+			IzhiSoma.d = 0.4
+			IzhiSoma.vrACH = 2
+
+		  	}
+
+
+	}
+
+	
+endtemplate IzhiCell_BC

@@ -1,0 +1,150 @@
+/* hoc file for BC simulations */ 
+/* 21-10-16 */ 
+/* special version for entry ratio calculation */ 
+/* running with Neuron 7.4 */ 
+/* Filename: HuaEnergyMMA */ 
+/* version with multiple pulses */ 
+/* nSegmentsFactor introduced */
+
+// xopen("stdRun.hoc")             load the standard NEURON hoc library 
+
+/* initial parameters */
+t = 0                         /* simulation starts at t = 0 ms */
+dt = 0.005                 /* simulation time step = 5 us */
+tstop = 10           /* simulation ends at myTStop */
+Vrest = -70                   /* resting potential, mV */
+Vleak = -70                   /* leak reversal potential, mV */
+celsius = 35.                /* 6.3 in the original HH data set */ 
+phiH_hhBC = 3.40218           /* factor inactivation rates */ 
+
+border1 = 120                  /* border between proximal and distal compartments 120 µm */ 
+border2 = 120
+axialresist = 170              /* axial resistivity in ohm*cm - adapted to mean values */
+membraneresist1 = 10000        /* membrane resistivity in ohm*cm^2 */
+membraneresist2 = 10000       
+membraneresist3 = 10000       
+
+membranecap = 0.9              /* membrane capacity in uF/cm^2 - */
+// these are the mean values from Noerenberg et al., 2010  
+
+xopen("DG-BasketCell2.hoc")      /* load the description of the morphology */
+define_shape() // do this before calculating segment centers
+
+
+forall {insert pas e_pas=Vleak }
+forall {v=Vrest Ra=axialresist cm=membranecap}
+
+soma distance(0, 0.5) /* reference at center of the soma */ 
+forsec "apic" for (x) {dis = distance(x)
+  if (dis <= border1) {g_pas(x) = 1/membraneresist1} else {g_pas(x) = 1/membraneresist2}}
+forsec "dend" for (x) {dis = distance(x)
+  if (dis <= border1) {g_pas(x) = 1/membraneresist1} else {g_pas(x) = 1/membraneresist2}}
+forsec "soma" {g_pas=1/membraneresist1}
+forsec "axon" {g_pas=1/membraneresist3} 
+
+forall {nseg = 20} 
+
+forall insert hhBC 
+forall gl_hhBC = 0 
+forall gkbar_hhBC = 0.03
+
+forsec "axon" for (x) {dis = distance(x)
+  if (dis <= border2) {gnabar_hhBC(x) = 0.05 } else {gnabar_hhBC(x) = 0.05}}
+  
+forsec "soma" gnabar_hhBC = 0.02 
+forsec "dend" gnabar_hhBC = 0.005 
+forsec "apic" gnabar_hhBC = 0.005 
+
+ 
+
+//topology()                      /* draw an ascii dendrogram */
+
+objectvar f5, f6, f7 // files 
+objectvar secRef
+strdef secName
+
+f5 = new File() /* for V all */ 
+f6 = new File() /* for INa all */ 
+f7 = new File() /* for IK all */ 
+
+objectvar s1
+
+
+proc init() {
+	finitialize(v_init)  /* this is the only original line present in nrn61/lib/hoc/stdRun.hoc */
+      dtsav = dt           /* save the original dt */
+      dt = 0.025           /* set dt to 0.025 ms */ 
+      t = 1e6
+      for i=0, 2000 fadvance()  /* 2000 prerun steps */ 
+      dt = dtsav           
+      finitialize()        /* initialize with current membrane potential */ 
+}
+
+proc stdinit() {                /* customize some functions from nrn61/lib/hoc/stdRun.hoc */
+	cvode_simgraph()
+	realtime = 0
+	setdt()
+	v_init = Vrest // added 
+	init()
+	initPlot()
+	
+	forall insert locus // see https://www.neuron.yale.edu/phpBB/viewtopic.php?f=8&t=3313 
+    load_file("interploci.hoc")
+    interploci(all)
+
+  
+	wopen("outfileAll.0") // added 
+	forall for (x) {
+	  secName = "none"
+	  secRef = new SectionRef() 
+	  if (secRef.has_parent) secRef.parent secName = secname()
+	  fprint("%s %g %g %g %g %g %g %g %g %s\n ", secname(), x, distance(x), x_locus(x), y_locus(x), z_locus(x), area(x), diam(x), branchOrder(), secName)}
+    wopen() // this closes the ouput file 
+
+    f5.wopen("outfileAll.1") // added 
+    f6.wopen("outfileAll.3") // added 
+    f7.wopen("outfileAll.4") // added 
+	n = 0
+}
+
+// new function to determine branch order - refers to currently accessed section 
+func branchOrder() { local ord
+  ord = 0 
+  s1 = new SectionRef()
+  while (s1.has_parent) {
+    s1.parent s1 = new SectionRef()
+    ord +=1
+  }
+  return ord
+}
+
+proc advance() {
+	fadvance()   
+    if ((t < tstop-dt)  && (n == 0)){
+	
+	  //f5.printf("%f ", t)
+	  //forall for (myx) f5.printf("%f ", v(myx))
+	  //f5.printf(" \n ")
+		
+	  //f6.printf("%f ", t)
+	  //forall for (myx) f6.printf("%f ",  ina_hhBC(myx))
+	  //f6.printf(" \n ")
+	  
+      //f7.printf("%f ", t)
+	  //forall for (myx) f7.printf("%f ",  ik_hhBC(myx))
+	  //f7.printf(" \n ")
+	
+	}
+    /* iNa and iK in each segment - ina and ik are in mA cm-2 - multiplication of current density and area done in MMA */ 
+	
+	n = n + 1
+	if (n == 1) n = 0
+	/* write only every fifth or tenth point */ 
+}
+
+
+/* start calculations immediately - FOR SPLICING ONLY */
+run()
+f5.close() // this closes the output files
+f6.close()
+f7.close()

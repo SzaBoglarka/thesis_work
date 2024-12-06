@@ -1,0 +1,425 @@
+
+./ampain.c: ../ampain.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ampain.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./ampain.o: ./ampain.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ampa.c: ../ampa.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ampa.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./ampa.o: ./ampa.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cadynin.c: ../cadynin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cadynin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./cadynin.o: ./cadynin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cadyn.c: ../cadyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cadyn.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./cadyn.o: ./cadyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./calcb.c: ../calcb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) calcb.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./calcb.o: ./calcb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./calc.c: ../calc.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) calc.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./calc.o: ./calc.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cal.c: ../cal.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cal.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./cal.o: ./cal.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cancr.c: ../cancr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cancr.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./cancr.o: ./cancr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./canin.c: ../canin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) canin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./canin.o: ./canin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./can.c: ../can.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) can.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./can.o: ./can.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./car.c: ../car.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) car.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./car.o: ./car.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./catcb.c: ../catcb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) catcb.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./catcb.o: ./catcb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cat.c: ../cat.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cat.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./cat.o: ./cat.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cpampain.c: ../cpampain.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cpampain.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./cpampain.o: ./cpampain.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./gabaain.c: ../gabaain.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) gabaain.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./gabaain.o: ./gabaain.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./gabaa.c: ../gabaa.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) gabaa.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./gabaa.o: ./gabaa.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./gabab.c: ../gabab.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) gabab.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./gabab.o: ./gabab.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./hcb.c: ../hcb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) hcb.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./hcb.o: ./hcb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./hin.c: ../hin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) hin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./hin.o: ./hin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./h.c: ../h.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) h.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./h.o: ./h.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ican.c: ../ican.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ican.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./ican.o: ./ican.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./iccb.c: ../iccb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) iccb.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./iccb.o: ./iccb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./iccr.c: ../iccr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) iccr.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./iccr.o: ./iccr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./icin.c: ../icin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) icin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./icin.o: ./icin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ikscb.c: ../ikscb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ikscb.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./ikscb.o: ./ikscb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ikscr.c: ../ikscr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ikscr.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./ikscr.o: ./ikscr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./iksin.c: ../iksin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) iksin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./iksin.o: ./iksin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./iks.c: ../iks.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) iks.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./iks.o: ./iks.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kadistcr.c: ../kadistcr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kadistcr.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kadistcr.o: ./kadistcr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kadistin.c: ../kadistin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kadistin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kadistin.o: ./kadistin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kadist.c: ../kadist.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kadist.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kadist.o: ./kadist.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kaproxcb.c: ../kaproxcb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kaproxcb.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kaproxcb.o: ./kaproxcb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kaproxin.c: ../kaproxin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kaproxin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kaproxin.o: ./kaproxin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kaprox.c: ../kaprox.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kaprox.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kaprox.o: ./kaprox.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kcain.c: ../kcain.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kcain.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kcain.o: ./kcain.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kca.c: ../kca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kca.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kca.o: ./kca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kctin.c: ../kctin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kctin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kctin.o: ./kctin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kct.c: ../kct.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kct.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kct.o: ./kct.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrcb.c: ../kdrcb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdrcb.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kdrcb.o: ./kdrcb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrcr.c: ../kdrcr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdrcr.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kdrcr.o: ./kdrcr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrin.c: ../kdrin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdrin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kdrin.o: ./kdrin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./kdr.c: ../kdr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdr.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./kdr.o: ./kdr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nafcb.c: ../nafcb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nafcb.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./nafcb.o: ./nafcb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nafcr.c: ../nafcr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nafcr.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./nafcr.o: ./nafcr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nafin.c: ../nafin.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nafin.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./nafin.o: ./nafin.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./naf.c: ../naf.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) naf.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./naf.o: ./naf.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nafx.c: ../nafx.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nafx.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./nafx.o: ./nafx.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nap.c: ../nap.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nap.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./nap.o: ./nap.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./netstim.c: ../netstim.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) netstim.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./netstim.o: ./netstim.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./NMDAIN.c: ../NMDAIN.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) NMDAIN.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./NMDAIN.o: ./NMDAIN.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./NMDA.c: ../NMDA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) NMDA.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./NMDA.o: ./NMDA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./sinclamp.c: ../sinclamp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) sinclamp.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./sinclamp.o: ./sinclamp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./vecstim.c: ../vecstim.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) vecstim.mod -o "/home/szabobogi/BC_modells/TzilivakiEtal_FSBCs_model/Multicompartmental_Biophysical_models/mechanism/x86_64")
+
+./vecstim.o: ./vecstim.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

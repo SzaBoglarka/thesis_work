@@ -1,0 +1,9 @@
+
+./izh.c: ../izh.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) izh.mod -o "/home/szabobogi/BC_modells/CA3_Hummos_2014/x86_64")
+
+./izh.o: ./izh.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

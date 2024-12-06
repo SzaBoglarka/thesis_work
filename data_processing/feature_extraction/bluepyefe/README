@@ -1,0 +1,15 @@
+
+extractor(old).py is the original BluePhyEfe standard features extractort
+In the new version (extractor.py) I extended the code with a new part so that it can handle baseline current info as an input and 
+create baseline_corrected standard currents and add it in the feature.json files 
+if in the config file in the options the "correct_standard_currents_with_baseline_current" is set to True
+(the defeault value is False)
+
+The definitions of the standard current amplitudes were also updated. 
+Now they depend on the firing frequency instead of the spikecount and 
+the frequency thresholds of the standard currents can be set for the given cell type. 
+
+Moreover, it this extended version can exclude bad traces from the extraction.
+
+Nothing else is changed, just this plus info is added in case of every standard current
+

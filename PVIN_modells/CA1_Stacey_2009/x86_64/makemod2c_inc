@@ -1,0 +1,17 @@
+
+./kdrbwb.c: ../kdrbwb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) kdrbwb.mod -o "/home/szabobogi/BC_modells/CA1_Stacey_2009/x86_64")
+
+./kdrbwb.o: ./kdrbwb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nafbwb.c: ../nafbwb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nafbwb.mod -o "/home/szabobogi/BC_modells/CA1_Stacey_2009/x86_64")
+
+./nafbwb.o: ./nafbwb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

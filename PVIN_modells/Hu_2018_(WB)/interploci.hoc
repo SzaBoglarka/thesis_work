@@ -1,0 +1,52 @@
+    proc interploci() { local ii, nn, xr  localobj xx, yy, zz, length, xint, yint, zint, range
+      // xx, yy, zz, length hold the original, irregularly spaced data
+      // xint, yint, zint, range hold the interpolated data, and are spaced at regular intervals
+
+      forsec $o1 {
+        // get the data for the section
+        nn = n3d()
+        xx = new Vector(nn)
+        yy = new Vector(nn)
+        zz = new Vector(nn)
+        length = new Vector(nn)
+
+        for ii = 0,nn-1 {
+          xx.x[ii] = x3d(ii)
+          yy.x[ii] = y3d(ii)
+          zz.x[ii] = z3d(ii)
+          length.x[ii] = arc3d(ii)
+        }
+
+        // to use Vector class's .interpolate()
+        // must first scale the independent variable
+        // i.e. normalize length along centroid
+        length.div(length.x[nn-1])
+
+        // initialize the destination "independent" vector
+        range = new Vector(nseg)
+        range.indgen(1/nseg)
+        range.add(1/(2*nseg))
+
+        // length contains the normalized distances of the pt3d points
+        // along the centroid of the section.  These are spaced at irregular intervals.
+        // range contains the normalized distances of internal nodes
+        // from the section's 0 end.  These are spaced at regular intervals.
+        // Ready to interpolate.
+
+        xint = new Vector(nseg) // hold coords of internal nodes
+        yint = new Vector(nseg)
+        zint = new Vector(nseg)
+
+        xint.interpolate(range, length, xx)
+        yint.interpolate(range, length, yy)
+        zint.interpolate(range, length, zz)
+
+        // for each internal node, assign the xyz values to x_locus, y_locus, z_locus
+        for ii = 0, nseg-1 {
+          xr = range.x[ii]
+          x_locus(xr) = xint.x[ii]
+          y_locus(xr) = yint.x[ii]
+          z_locus(xr) = zint.x[ii]
+        }
+      }
+    }

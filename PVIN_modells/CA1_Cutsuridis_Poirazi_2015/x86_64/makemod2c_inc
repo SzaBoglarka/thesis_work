@@ -1,0 +1,65 @@
+
+./bgka.c: ../bgka.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) bgka.mod -o "/home/szabobogi/BC_modells/CA1_Cutsuridis_Poirazi_2015/x86_64")
+
+./bgka.o: ./bgka.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cagk2.c: ../cagk2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cagk2.mod -o "/home/szabobogi/BC_modells/CA1_Cutsuridis_Poirazi_2015/x86_64")
+
+./cagk2.o: ./cagk2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./cal.c: ../cal.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) cal.mod -o "/home/szabobogi/BC_modells/CA1_Cutsuridis_Poirazi_2015/x86_64")
+
+./cal.o: ./cal.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ccanl.c: ../ccanl.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ccanl.mod -o "/home/szabobogi/BC_modells/CA1_Cutsuridis_Poirazi_2015/x86_64")
+
+./ccanl.o: ./ccanl.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./gskch.c: ../gskch.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) gskch.mod -o "/home/szabobogi/BC_modells/CA1_Cutsuridis_Poirazi_2015/x86_64")
+
+./gskch.o: ./gskch.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ichan2.c: ../ichan2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ichan2.mod -o "/home/szabobogi/BC_modells/CA1_Cutsuridis_Poirazi_2015/x86_64")
+
+./ichan2.o: ./ichan2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./LcaMig.c: ../LcaMig.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) LcaMig.mod -o "/home/szabobogi/BC_modells/CA1_Cutsuridis_Poirazi_2015/x86_64")
+
+./LcaMig.o: ./LcaMig.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./nca.c: ../nca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) nca.mod -o "/home/szabobogi/BC_modells/CA1_Cutsuridis_Poirazi_2015/x86_64")
+
+./nca.o: ./nca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+

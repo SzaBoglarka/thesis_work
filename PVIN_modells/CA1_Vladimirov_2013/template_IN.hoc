@@ -1,0 +1,55 @@
+begintemplate basket
+public init, topol, basic_shape, subsets, geom, biophys, geom_nseg, position
+public soma
+
+proc init() {
+  topol()
+  basic_shape()
+  subsets()
+  geom()
+  biophys()
+  geom_nseg()
+}
+
+create soma
+
+proc topol() {}
+proc basic_shape() {
+	soma {pt3dclear() pt3dadd(0, 0, 0, 1) pt3dadd(0, 15, 0, 1)}
+}
+
+proc subsets() {}
+proc geom() {
+  soma {  L = 20  diam = 20  }
+}
+proc geom_nseg() { nseg = 1 }
+proc position() { local i
+  soma for i = 0, n3d()-1 {
+    pt3dchange(i, $1-x+x3d(i), $2-y+y3d(i), $3-z+z3d(i), diam3d(i))
+  }
+  x = $1  y = $2  z = $3
+}
+proc biophys() {
+	soma {
+	insert pas 
+		g_pas = 1E-4
+    insert NaFax
+		gbar_NaFax =   0.035
+    insert Kdrax
+		gbar_Kdrax =   0.009
+    e_pas = -65
+	ek =  -90.
+	ena =   55.
+    cm = 1
+	insert extracellular
+		xraxial =  1e+09
+		xraxial[1] =  1e+09
+		xg = 1e+09
+		xg[1] = 1e+09
+		xc = 0
+		xc[1] = 0
+		e_extracellular = 0 
+	}
+}
+
+endtemplate basket

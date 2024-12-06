@@ -1,0 +1,1360 @@
+{
+    "AHP1_depth_from_peak.highfreq_firing_current": {
+        "Std": "5.0639",
+        "Mean": "94.3054",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AHP1_depth_from_peak"
+    },
+    "AHP1_depth_from_peak.rheobase_current": {
+        "Std": "6.6905",
+        "Mean": "95.0317",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AHP1_depth_from_peak"
+    },
+    "AHP1_depth_from_peak.steady_state_current": {
+        "Std": "5.334",
+        "Mean": "92.8406",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AHP1_depth_from_peak"
+    },
+    "AHP2_depth_from_peak.highfreq_firing_current": {
+        "Std": "4.943",
+        "Mean": "88.7451",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AHP2_depth_from_peak"
+    },
+    "AHP2_depth_from_peak.steady_state_current": {
+        "Std": "5.4572",
+        "Mean": "92.9749",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AHP2_depth_from_peak"
+    },
+    "AHP_depth.highfreq_firing_current": {
+        "Std": "5.3319",
+        "Mean": "10.6245",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AHP_depth"
+    },
+    "AHP_depth.rheobase_current": {
+        "Std": "5.1106",
+        "Mean": "5.8949",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AHP_depth"
+    },
+    "AHP_depth.steady_state_current": {
+        "Std": "4.5825",
+        "Mean": "6.8329",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AHP_depth"
+    },
+    "AHP_depth_abs.highfreq_firing_current": {
+        "Std": "5.2902",
+        "Mean": "-55.3704",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AHP_depth_abs"
+    },
+    "AHP_depth_abs.rheobase_current": {
+        "Std": "4.0152",
+        "Mean": "-58.7365",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AHP_depth_abs"
+    },
+    "AHP_depth_abs.steady_state_current": {
+        "Std": "3.7761",
+        "Mean": "-58.288",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AHP_depth_abs"
+    },
+    "AHP_depth_diff.highfreq_firing_current": {
+        "Std": "0.0207",
+        "Mean": "0.0526",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AHP_depth_diff"
+    },
+    "AHP_depth_diff.steady_state_current": {
+        "Std": "0.0118",
+        "Mean": "0.0302",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AHP_depth_diff"
+    },
+    "AHP_depth_from_peak.highfreq_firing_current": {
+        "Std": "10.0556",
+        "Mean": "79.7974",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AHP_depth_from_peak"
+    },
+    "AHP_depth_from_peak.rheobase_current": {
+        "Std": "6.2107",
+        "Mean": "93.7997",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AHP_depth_from_peak"
+    },
+    "AHP_depth_from_peak.steady_state_current": {
+        "Std": "4.929",
+        "Mean": "91.8434",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AHP_depth_from_peak"
+    },
+    "AHP_time_from_peak.highfreq_firing_current": {
+        "Std": "0.3599",
+        "Mean": "1.1377",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AHP_time_from_peak"
+    },
+    "AHP_time_from_peak.rheobase_current": {
+        "Std": "0.2174",
+        "Mean": "0.9503",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AHP_time_from_peak"
+    },
+    "AHP_time_from_peak.steady_state_current": {
+        "Std": "0.2123",
+        "Mean": "0.9501",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AHP_time_from_peak"
+    },
+    "AP1_peak.highfreq_firing_current": {
+        "Std": "3.7436",
+        "Mean": "32.6538",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP1_peak"
+    },
+    "AP1_peak.rheobase_current": {
+        "Std": "4.942",
+        "Mean": "35.8459",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AP1_peak"
+    },
+    "AP1_peak.steady_state_current": {
+        "Std": "4.5636",
+        "Mean": "33.6975",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP1_peak"
+    },
+    "AP2_AP1_peak_diff.highfreq_firing_current": {
+        "Std": "2.0368",
+        "Mean": "-3.7292",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP2_AP1_peak_diff"
+    },
+    "AP2_AP1_peak_diff.steady_state_current": {
+        "Std": "4.4381",
+        "Mean": "0.5005",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP2_AP1_peak_diff"
+    },
+    "AP2_amp.highfreq_firing_current": {
+        "Std": "4.1149",
+        "Mean": "71.167",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP2_amp"
+    },
+    "AP2_amp.steady_state_current": {
+        "Std": "3.9339",
+        "Mean": "74.7314",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP2_amp"
+    },
+    "AP2_begin_voltage.highfreq_firing_current": {
+        "Std": "4.0457",
+        "Mean": "-42.2424",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP2_begin_voltage"
+    },
+    "AP2_begin_voltage.steady_state_current": {
+        "Std": "3.5476",
+        "Mean": "-40.5334",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP2_begin_voltage"
+    },
+    "AP2_begin_width.highfreq_firing_current": {
+        "Std": "0.147",
+        "Mean": "0.78",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP2_begin_width"
+    },
+    "AP2_begin_width.steady_state_current": {
+        "Std": "0.1166",
+        "Mean": "0.72",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP2_begin_width"
+    },
+    "AP2_peak.highfreq_firing_current": {
+        "Std": "3.8023",
+        "Mean": "28.9246",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP2_peak"
+    },
+    "AP2_peak.steady_state_current": {
+        "Std": "3.5484",
+        "Mean": "34.198",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP2_peak"
+    },
+    "AP2_width.highfreq_firing_current": {
+        "Std": "0.055",
+        "Mean": "0.3908",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP2_width"
+    },
+    "AP2_width.steady_state_current": {
+        "Std": "0.0632",
+        "Mean": "0.3732",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP2_width"
+    },
+    "AP_amplitude.highfreq_firing_current": {
+        "Std": "7.609",
+        "Mean": "67.1544",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_amplitude"
+    },
+    "AP_amplitude.steady_state_current": {
+        "Std": "3.1083",
+        "Mean": "75.2328",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_amplitude"
+    },
+    "AP_amplitude_change.highfreq_firing_current": {
+        "Std": "0.0888",
+        "Mean": "-0.1746",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_amplitude_change"
+    },
+    "AP_amplitude_change.steady_state_current": {
+        "Std": "0.0702",
+        "Mean": "0.0119",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_amplitude_change"
+    },
+    "AP_amplitude_from_voltagebase.highfreq_firing_current": {
+        "Std": "6.2118",
+        "Mean": "90.42",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_amplitude_from_voltagebase"
+    },
+    "AP_amplitude_from_voltagebase.rheobase_current": {
+        "Std": "3.7655",
+        "Mean": "99.6946",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AP_amplitude_from_voltagebase"
+    },
+    "AP_amplitude_from_voltagebase.steady_state_current": {
+        "Std": "3.5404",
+        "Mean": "98.6762",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_amplitude_from_voltagebase"
+    },
+    "AP_begin_voltage.highfreq_firing_current": {
+        "Std": "3.3451",
+        "Mean": "-42.7818",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_begin_voltage"
+    },
+    "AP_begin_voltage.steady_state_current": {
+        "Std": "2.8673",
+        "Mean": "-41.6898",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_begin_voltage"
+    },
+    "AP_begin_width.highfreq_firing_current": {
+        "Std": "0.236",
+        "Mean": "0.9762",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_begin_width"
+    },
+    "AP_begin_width.steady_state_current": {
+        "Std": "0.1146",
+        "Mean": "0.7817",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_begin_width"
+    },
+    "AP_duration.highfreq_firing_current": {
+        "Std": "0.2411",
+        "Mean": "1.2746",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_duration"
+    },
+    "AP_duration.steady_state_current": {
+        "Std": "0.1309",
+        "Mean": "1.1016",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_duration"
+    },
+    "AP_duration_change.highfreq_firing_current": {
+        "Std": "0.0517",
+        "Mean": "0.2948",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_duration_change"
+    },
+    "AP_duration_change.steady_state_current": {
+        "Std": "0.0325",
+        "Mean": "0.0236",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_duration_change"
+    },
+    "AP_duration_half_width.highfreq_firing_current": {
+        "Std": "0.1047",
+        "Mean": "0.4139",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_duration_half_width"
+    },
+    "AP_duration_half_width.steady_state_current": {
+        "Std": "0.0487",
+        "Mean": "0.3301",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_duration_half_width"
+    },
+    "AP_duration_half_width_change.highfreq_firing_current": {
+        "Std": "0.2407",
+        "Mean": "0.2863",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_duration_half_width_change"
+    },
+    "AP_duration_half_width_change.steady_state_current": {
+        "Std": "0.1409",
+        "Mean": "0.0601",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_duration_half_width_change"
+    },
+    "AP_fall_rate.highfreq_firing_current": {
+        "Std": "28.1959",
+        "Mean": "-95.1531",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_fall_rate"
+    },
+    "AP_fall_rate.rheobase_current": {
+        "Std": "25.5447",
+        "Mean": "-125.0736",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AP_fall_rate"
+    },
+    "AP_fall_rate.steady_state_current": {
+        "Std": "21.8414",
+        "Mean": "-120.2579",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_fall_rate"
+    },
+    "AP_fall_time.highfreq_firing_current": {
+        "Std": "0.1737",
+        "Mean": "0.8877",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_fall_time"
+    },
+    "AP_fall_time.rheobase_current": {
+        "Std": "0.1101",
+        "Mean": "0.7714",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AP_fall_time"
+    },
+    "AP_fall_time.steady_state_current": {
+        "Std": "0.1052",
+        "Mean": "0.781",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_fall_time"
+    },
+    "AP_height.highfreq_firing_current": {
+        "Std": "5.9854",
+        "Mean": "24.4251",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_height"
+    },
+    "AP_height.rheobase_current": {
+        "Std": "4.2907",
+        "Mean": "35.0632",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "AP_height"
+    },
+    "AP_height.steady_state_current": {
+        "Std": "3.7258",
+        "Mean": "33.5554",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_height"
+    },
+    "AP_rise_rate.highfreq_firing_current": {
+        "Std": "47.9485",
+        "Mean": "186.3203",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_rise_rate"
+    },
+    "AP_rise_rate.steady_state_current": {
+        "Std": "26.5359",
+        "Mean": "240.6796",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_rise_rate"
+    },
+    "AP_rise_rate_change.highfreq_firing_current": {
+        "Std": "0.1018",
+        "Mean": "-0.3464",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_rise_rate_change"
+    },
+    "AP_rise_rate_change.steady_state_current": {
+        "Std": "0.1082",
+        "Mean": "0.0248",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_rise_rate_change"
+    },
+    "AP_rise_time.highfreq_firing_current": {
+        "Std": "0.0692",
+        "Mean": "0.3856",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_rise_time"
+    },
+    "AP_rise_time.steady_state_current": {
+        "Std": "0.0311",
+        "Mean": "0.3202",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_rise_time"
+    },
+    "AP_width.highfreq_firing_current": {
+        "Std": "0.0963",
+        "Mean": "0.4067",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "AP_width"
+    },
+    "AP_width.steady_state_current": {
+        "Std": "0.0641",
+        "Mean": "0.3491",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "AP_width"
+    },
+    "APlast_amp.highfreq_firing_current": {
+        "Std": "10.0798",
+        "Mean": "63.4399",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "APlast_amp"
+    },
+    "APlast_amp.rheobase_current": {
+        "Std": "3.8556",
+        "Mean": "76.3855",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "APlast_amp"
+    },
+    "APlast_amp.steady_state_current": {
+        "Std": "3.5956",
+        "Mean": "74.8718",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "APlast_amp"
+    },
+    "ISI_CV.highfreq_firing_current": {
+        "Std": "0.0188",
+        "Mean": "0.0759",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "ISI_CV"
+    },
+    "ISI_CV.steady_state_current": {
+        "Std": "0.0409",
+        "Mean": "0.2654",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "ISI_CV"
+    },
+    "ISI_log_slope.highfreq_firing_current": {
+        "Std": "0.0193",
+        "Mean": "-0.0661",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "ISI_log_slope"
+    },
+    "ISI_log_slope.steady_state_current": {
+        "Std": "0.0234",
+        "Mean": "-0.0844",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "ISI_log_slope"
+    },
+    "ISI_log_slope_skip.highfreq_firing_current": {
+        "Std": "0.0191",
+        "Mean": "-0.0645",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "ISI_log_slope_skip"
+    },
+    "ISI_log_slope_skip.steady_state_current": {
+        "Std": "0.0432",
+        "Mean": "-0.0643",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "ISI_log_slope_skip"
+    },
+    "ISI_semilog_slope.highfreq_firing_current": {
+        "Std": "0.0004",
+        "Mean": "-0.0013",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "ISI_semilog_slope"
+    },
+    "ISI_semilog_slope.steady_state_current": {
+        "Std": "0.0025",
+        "Mean": "-0.0054",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "ISI_semilog_slope"
+    },
+    "ISI_values.highfreq_firing_current": {
+        "Std": "0.6602",
+        "Mean": "6.1963",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "ISI_values"
+    },
+    "ISI_values.steady_state_current": {
+        "Std": "5.7047",
+        "Mean": "20.4964",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "ISI_values"
+    },
+    "Spikecount.highfreq_firing_current": {
+        "Std": "19.4587",
+        "Mean": "162.6",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "Spikecount"
+    },
+    "Spikecount.rheobase_current": {
+        "Std": "9.1214",
+        "Mean": "12.0",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "Spikecount"
+    },
+    "Spikecount.steady_state_current": {
+        "Std": "21.2094",
+        "Mean": "48.4",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "Spikecount"
+    },
+    "Spikecount_stimint.highfreq_firing_current": {
+        "Std": "19.4587",
+        "Mean": "162.6",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "Spikecount_stimint"
+    },
+    "Spikecount_stimint.rheobase_current": {
+        "Std": "9.1214",
+        "Mean": "12.0",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "Spikecount_stimint"
+    },
+    "Spikecount_stimint.steady_state_current": {
+        "Std": "21.2094",
+        "Mean": "48.4",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "Spikecount_stimint"
+    },
+    "adaptation_index.highfreq_firing_current": {
+        "Std": "0.0002",
+        "Mean": "-0.0008",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "adaptation_index"
+    },
+    "adaptation_index.steady_state_current": {
+        "Std": "0.0061",
+        "Mean": "-0.0052",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "adaptation_index"
+    },
+    "adaptation_index2.highfreq_firing_current": {
+        "Std": "0.0003",
+        "Mean": "-0.0007",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "adaptation_index2"
+    },
+    "adaptation_index2.steady_state_current": {
+        "Std": "0.0035",
+        "Mean": "-0.0033",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "adaptation_index2"
+    },
+    "amp_drop_first_last.highfreq_firing_current": {
+        "Std": "5.3898",
+        "Mean": "11.2854",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "amp_drop_first_last"
+    },
+    "amp_drop_first_last.steady_state_current": {
+        "Std": "3.4128",
+        "Mean": "0.6592",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "amp_drop_first_last"
+    },
+    "amp_drop_first_second.highfreq_firing_current": {
+        "Std": "2.0368",
+        "Mean": "3.7292",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "amp_drop_first_second"
+    },
+    "amp_drop_first_second.steady_state_current": {
+        "Std": "4.4381",
+        "Mean": "-0.5005",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "amp_drop_first_second"
+    },
+    "amp_drop_second_last.highfreq_firing_current": {
+        "Std": "5.1605",
+        "Mean": "7.5562",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "amp_drop_second_last"
+    },
+    "amp_drop_second_last.steady_state_current": {
+        "Std": "1.5402",
+        "Mean": "1.1597",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "amp_drop_second_last"
+    },
+    "average_fI_slope.global": {
+        "Std": "0.1082",
+        "Mean": "0.3784",
+        "Weight": "1",
+        "Stimulus": "global",
+        "Type": "average_fI_slope"
+    },
+    "decay_time_constant_after_stim.highfreq_firing_current": {
+        "Std": "1.1365",
+        "Mean": "6.9049",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "decay_time_constant_after_stim"
+    },
+    "decay_time_constant_after_stim.rheobase_current": {
+        "Std": "2.8575",
+        "Mean": "9.2937",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "decay_time_constant_after_stim"
+    },
+    "decay_time_constant_after_stim.rheobase_prev_current": {
+        "Std": "2.351",
+        "Mean": "10.0392",
+        "Weight": "1",
+        "Stimulus": "rheobase_prev_current",
+        "Type": "decay_time_constant_after_stim"
+    },
+    "decay_time_constant_after_stim.standard_negative_current": {
+        "Std": "2.9381",
+        "Mean": "8.4069",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "decay_time_constant_after_stim"
+    },
+    "decay_time_constant_after_stim.steady_state_current": {
+        "Std": "1.6016",
+        "Mean": "7.759",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "decay_time_constant_after_stim"
+    },
+    "doublet_ISI.highfreq_firing_current": {
+        "Std": "5.2387",
+        "Mean": "10.5",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "doublet_ISI"
+    },
+    "doublet_ISI.steady_state_current": {
+        "Std": "22.9883",
+        "Mean": "46.74",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "doublet_ISI"
+    },
+    "fast_AHP.highfreq_firing_current": {
+        "Std": "2.5069",
+        "Mean": "12.5546",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "fast_AHP"
+    },
+    "fast_AHP.steady_state_current": {
+        "Std": "2.2014",
+        "Mean": "16.5934",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "fast_AHP"
+    },
+    "fast_AHP_change.highfreq_firing_current": {
+        "Std": "0.1823",
+        "Mean": "0.0212",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "fast_AHP_change"
+    },
+    "fast_AHP_change.steady_state_current": {
+        "Std": "0.0641",
+        "Mean": "-0.0783",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "fast_AHP_change"
+    },
+    "highfreq_firing_current.global": {
+        "Std": "0.0577",
+        "Mean": "0.7326",
+        "Weight": "1",
+        "Stimulus": "global",
+        "Type": "highfreq_firing_current"
+    },
+    "initial_fI_slope.global": {
+        "Std": "0.1091",
+        "Mean": "0.4854",
+        "Weight": "1",
+        "Stimulus": "global",
+        "Type": "initial_fI_slope"
+    },
+    "inv_fifth_ISI.highfreq_firing_current": {
+        "Std": "14.7665",
+        "Mean": "136.3253",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "inv_fifth_ISI"
+    },
+    "inv_fifth_ISI.steady_state_current": {
+        "Std": "26.3954",
+        "Mean": "55.9575",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "inv_fifth_ISI"
+    },
+    "inv_first_ISI.highfreq_firing_current": {
+        "Std": "47.8449",
+        "Mean": "118.4312",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "inv_first_ISI"
+    },
+    "inv_first_ISI.steady_state_current": {
+        "Std": "38.1003",
+        "Mean": "37.7839",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "inv_first_ISI"
+    },
+    "inv_fourth_ISI.highfreq_firing_current": {
+        "Std": "14.5132",
+        "Mean": "138.709",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "inv_fourth_ISI"
+    },
+    "inv_fourth_ISI.steady_state_current": {
+        "Std": "39.2423",
+        "Mean": "59.6966",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "inv_fourth_ISI"
+    },
+    "inv_last_ISI.highfreq_firing_current": {
+        "Std": "24.6359",
+        "Mean": "176.6607",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "inv_last_ISI"
+    },
+    "inv_last_ISI.steady_state_current": {
+        "Std": "9.7255",
+        "Mean": "54.2926",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "inv_last_ISI"
+    },
+    "inv_second_ISI.highfreq_firing_current": {
+        "Std": "23.4412",
+        "Mean": "143.1541",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "inv_second_ISI"
+    },
+    "inv_second_ISI.steady_state_current": {
+        "Std": "16.3167",
+        "Mean": "46.1537",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "inv_second_ISI"
+    },
+    "inv_third_ISI.highfreq_firing_current": {
+        "Std": "11.7326",
+        "Mean": "137.5466",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "inv_third_ISI"
+    },
+    "inv_third_ISI.steady_state_current": {
+        "Std": "15.6623",
+        "Mean": "38.3999",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "inv_third_ISI"
+    },
+    "inv_time_to_first_spike.highfreq_firing_current": {
+        "Std": "84.8991",
+        "Mean": "287.6625",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "inv_time_to_first_spike"
+    },
+    "inv_time_to_first_spike.rheobase_current": {
+        "Std": "0.4786",
+        "Mean": "2.6828",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "inv_time_to_first_spike"
+    },
+    "inv_time_to_first_spike.steady_state_current": {
+        "Std": "6.5394",
+        "Mean": "11.8544",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "inv_time_to_first_spike"
+    },
+    "irregularity_index.highfreq_firing_current": {
+        "Std": "0.0386",
+        "Mean": "0.233",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "irregularity_index"
+    },
+    "irregularity_index.steady_state_current": {
+        "Std": "1.7724",
+        "Mean": "4.5879",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "irregularity_index"
+    },
+    "max_amp_difference.highfreq_firing_current": {
+        "Std": "1.4899",
+        "Mean": "4.4495",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "max_amp_difference"
+    },
+    "max_amp_difference.steady_state_current": {
+        "Std": "1.7187",
+        "Mean": "4.6265",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "max_amp_difference"
+    },
+    "maximum_fI_slope.global": {
+        "Std": "0.0765",
+        "Mean": "0.5081",
+        "Weight": "1",
+        "Stimulus": "global",
+        "Type": "maximum_fI_slope"
+    },
+    "maximum_voltage.highfreq_firing_current": {
+        "Std": "3.7436",
+        "Mean": "32.6538",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "maximum_voltage"
+    },
+    "maximum_voltage.rheobase_current": {
+        "Std": "4.572",
+        "Mean": "37.3962",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "maximum_voltage"
+    },
+    "maximum_voltage.steady_state_current": {
+        "Std": "4.128",
+        "Mean": "36.3342",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "maximum_voltage"
+    },
+    "maximum_voltage_from_voltagebase.highfreq_firing_current": {
+        "Std": "3.4782",
+        "Mean": "98.6487",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "maximum_voltage_from_voltagebase"
+    },
+    "maximum_voltage_from_voltagebase.rheobase_current": {
+        "Std": "3.9471",
+        "Mean": "102.0276",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "maximum_voltage_from_voltagebase"
+    },
+    "maximum_voltage_from_voltagebase.steady_state_current": {
+        "Std": "3.8158",
+        "Mean": "101.4551",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "maximum_voltage_from_voltagebase"
+    },
+    "mean_frequency.highfreq_firing_current": {
+        "Std": "19.4979",
+        "Mean": "163.1302",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "mean_frequency"
+    },
+    "mean_frequency.rheobase_current": {
+        "Std": "9.0945",
+        "Mean": "12.3621",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "mean_frequency"
+    },
+    "mean_frequency.steady_state_current": {
+        "Std": "21.1327",
+        "Mean": "48.7168",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "mean_frequency"
+    },
+    "min_voltage_between_spikes.highfreq_firing_current": {
+        "Std": "5.2767",
+        "Mean": "-55.3869",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "min_voltage_between_spikes"
+    },
+    "min_voltage_between_spikes.steady_state_current": {
+        "Std": "3.7769",
+        "Mean": "-58.2975",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "min_voltage_between_spikes"
+    },
+    "minimum_voltage.rheobase_prev_current": {
+        "Std": "1.2803",
+        "Mean": "-64.9414",
+        "Weight": "1",
+        "Stimulus": "rheobase_prev_current",
+        "Type": "minimum_voltage"
+    },
+    "minimum_voltage.standard_negative_current": {
+        "Std": "1.6247",
+        "Mean": "-71.0754",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "minimum_voltage"
+    },
+    "number_initial_spikes.highfreq_firing_current": {
+        "Std": "1.0198",
+        "Mean": "13.4",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "number_initial_spikes"
+    },
+    "number_initial_spikes.rheobase_current": {
+        "Std": "0.0",
+        "Mean": "0.0",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "number_initial_spikes"
+    },
+    "number_initial_spikes.steady_state_current": {
+        "Std": "0.8944",
+        "Mean": "1.0",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "number_initial_spikes"
+    },
+    "peak_voltage.highfreq_firing_current": {
+        "Std": "5.9854",
+        "Mean": "24.4251",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "peak_voltage"
+    },
+    "peak_voltage.rheobase_current": {
+        "Std": "4.2907",
+        "Mean": "35.0632",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "peak_voltage"
+    },
+    "peak_voltage.steady_state_current": {
+        "Std": "3.7258",
+        "Mean": "33.5554",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "peak_voltage"
+    },
+    "rheobase_current.global": {
+        "Std": "0.0545",
+        "Mean": "0.3126",
+        "Weight": "1",
+        "Stimulus": "global",
+        "Type": "rheobase_current"
+    },
+    "rheobase_prev_current.global": {
+        "Std": "0.0403",
+        "Mean": "0.2526",
+        "Weight": "1",
+        "Stimulus": "global",
+        "Type": "rheobase_prev_current"
+    },
+    "sag_amplitude.standard_negative_current": {
+        "Std": "0.2213",
+        "Mean": "1.0424",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "sag_amplitude"
+    },
+    "sag_ratio1.standard_negative_current": {
+        "Std": "0.0243",
+        "Mean": "0.171",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "sag_ratio1"
+    },
+    "sag_ratio2.standard_negative_current": {
+        "Std": "0.0243",
+        "Mean": "0.829",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "sag_ratio2"
+    },
+    "spike_half_width.highfreq_firing_current": {
+        "Std": "0.1146",
+        "Mean": "0.4687",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "spike_half_width"
+    },
+    "spike_half_width.rheobase_current": {
+        "Std": "0.0565",
+        "Mean": "0.3719",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "spike_half_width"
+    },
+    "spike_half_width.steady_state_current": {
+        "Std": "0.0544",
+        "Mean": "0.3793",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "spike_half_width"
+    },
+    "spike_width2.highfreq_firing_current": {
+        "Std": "0.0922",
+        "Mean": "0.3803",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "spike_width2"
+    },
+    "spike_width2.steady_state_current": {
+        "Std": "0.0541",
+        "Mean": "0.3084",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "spike_width2"
+    },
+    "standard_negative_current.global": {
+        "Std": "0.008",
+        "Mean": "-0.084",
+        "Weight": "1",
+        "Stimulus": "global",
+        "Type": "standard_negative_current"
+    },
+    "steady_state_current.global": {
+        "Std": "0.0736",
+        "Mean": "0.3926",
+        "Weight": "1",
+        "Stimulus": "global",
+        "Type": "steady_state_current"
+    },
+    "steady_state_hyper.rheobase_prev_current": {
+        "Std": "4.2583",
+        "Mean": "-51.51",
+        "Weight": "1",
+        "Stimulus": "rheobase_prev_current",
+        "Type": "steady_state_hyper"
+    },
+    "steady_state_hyper.standard_negative_current": {
+        "Std": "1.4845",
+        "Mean": "-69.7902",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "steady_state_hyper"
+    },
+    "steady_state_voltage.highfreq_firing_current": {
+        "Std": "2.5955",
+        "Mean": "-65.7665",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "steady_state_voltage"
+    },
+    "steady_state_voltage.rheobase_current": {
+        "Std": "1.3932",
+        "Mean": "-65.1593",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "steady_state_voltage"
+    },
+    "steady_state_voltage.rheobase_prev_current": {
+        "Std": "1.3385",
+        "Mean": "-64.7048",
+        "Weight": "1",
+        "Stimulus": "rheobase_prev_current",
+        "Type": "steady_state_voltage"
+    },
+    "steady_state_voltage.standard_negative_current": {
+        "Std": "1.0895",
+        "Mean": "-64.9129",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "steady_state_voltage"
+    },
+    "steady_state_voltage.steady_state_current": {
+        "Std": "1.6038",
+        "Mean": "-66.3689",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "steady_state_voltage"
+    },
+    "steady_state_voltage_stimend.rheobase_prev_current": {
+        "Std": "4.227",
+        "Mean": "-51.5841",
+        "Weight": "1",
+        "Stimulus": "rheobase_prev_current",
+        "Type": "steady_state_voltage_stimend"
+    },
+    "steady_state_voltage_stimend.standard_negative_current": {
+        "Std": "1.5851",
+        "Mean": "-70.0331",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "steady_state_voltage_stimend"
+    },
+    "time_constant.standard_negative_current": {
+        "Std": "3.6584",
+        "Mean": "11.1359",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "time_constant"
+    },
+    "time_to_first_spike.highfreq_firing_current": {
+        "Std": "1.4568",
+        "Mean": "3.89",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "time_to_first_spike"
+    },
+    "time_to_first_spike.rheobase_current": {
+        "Std": "72.3097",
+        "Mean": "385.47",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "time_to_first_spike"
+    },
+    "time_to_first_spike.steady_state_current": {
+        "Std": "54.5463",
+        "Mean": "111.37",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "time_to_first_spike"
+    },
+    "time_to_last_spike.highfreq_firing_current": {
+        "Std": "2.1099",
+        "Mean": "996.73",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "time_to_last_spike"
+    },
+    "time_to_last_spike.steady_state_current": {
+        "Std": "6.4908",
+        "Mean": "991.91",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "time_to_last_spike"
+    },
+    "time_to_second_spike.highfreq_firing_current": {
+        "Std": "6.659",
+        "Mean": "14.39",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "time_to_second_spike"
+    },
+    "time_to_second_spike.steady_state_current": {
+        "Std": "71.2726",
+        "Mean": "158.11",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "time_to_second_spike"
+    },
+    "voltage_after_stim.highfreq_firing_current": {
+        "Std": "2.5577",
+        "Mean": "-65.9504",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "voltage_after_stim"
+    },
+    "voltage_after_stim.rheobase_current": {
+        "Std": "1.4809",
+        "Mean": "-65.4221",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "voltage_after_stim"
+    },
+    "voltage_after_stim.rheobase_prev_current": {
+        "Std": "1.4176",
+        "Mean": "-64.9587",
+        "Weight": "1",
+        "Stimulus": "rheobase_prev_current",
+        "Type": "voltage_after_stim"
+    },
+    "voltage_after_stim.standard_negative_current": {
+        "Std": "1.0388",
+        "Mean": "-64.8893",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "voltage_after_stim"
+    },
+    "voltage_after_stim.steady_state_current": {
+        "Std": "1.603",
+        "Mean": "-66.486",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "voltage_after_stim"
+    },
+    "voltage_base.highfreq_firing_current": {
+        "Std": "1.2868",
+        "Mean": "-65.9949",
+        "Weight": "1",
+        "Stimulus": "highfreq_firing_current",
+        "Type": "voltage_base"
+    },
+    "voltage_base.rheobase_current": {
+        "Std": "1.2214",
+        "Mean": "-64.6314",
+        "Weight": "1",
+        "Stimulus": "rheobase_current",
+        "Type": "voltage_base"
+    },
+    "voltage_base.rheobase_prev_current": {
+        "Std": "1.3287",
+        "Mean": "-65.0365",
+        "Weight": "1",
+        "Stimulus": "rheobase_prev_current",
+        "Type": "voltage_base"
+    },
+    "voltage_base.standard_negative_current": {
+        "Std": "1.0731",
+        "Mean": "-64.9931",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "voltage_base"
+    },
+    "voltage_base.steady_state_current": {
+        "Std": "1.1383",
+        "Mean": "-65.1209",
+        "Weight": "1",
+        "Stimulus": "steady_state_current",
+        "Type": "voltage_base"
+    },
+    "voltage_deflection.standard_negative_current": {
+        "Std": "0.5686",
+        "Mean": "-4.753",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "voltage_deflection"
+    },
+    "voltage_deflection_begin.standard_negative_current": {
+        "Std": "0.4929",
+        "Mean": "-5.1343",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "voltage_deflection_begin"
+    },
+    "voltage_deflection_vb_ssse.standard_negative_current": {
+        "Std": "0.6972",
+        "Mean": "-5.04",
+        "Weight": "1",
+        "Stimulus": "standard_negative_current",
+        "Type": "voltage_deflection_vb_ssse"
+    }
+}

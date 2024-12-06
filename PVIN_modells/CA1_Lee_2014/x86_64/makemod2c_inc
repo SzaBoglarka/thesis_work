@@ -1,0 +1,73 @@
+
+./ch_CavL.c: ../ch_CavL.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ch_CavL.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./ch_CavL.o: ./ch_CavL.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_CavN.c: ../ch_CavN.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ch_CavN.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./ch_CavN.o: ./ch_CavN.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KCaS.c: ../ch_KCaS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ch_KCaS.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./ch_KCaS.o: ./ch_KCaS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Kdrfast.c: ../ch_Kdrfast.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ch_Kdrfast.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./ch_Kdrfast.o: ./ch_Kdrfast.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvA.c: ../ch_KvA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ch_KvA.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./ch_KvA.o: ./ch_KvA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvCaB.c: ../ch_KvCaB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ch_KvCaB.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./ch_KvCaB.o: ./ch_KvCaB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_leak.c: ../ch_leak.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ch_leak.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./ch_leak.o: ./ch_leak.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_NavPVBC.c: ../ch_NavPVBC.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) ch_NavPVBC.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./ch_NavPVBC.o: ./ch_NavPVBC.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./iconc_Ca.c: ../iconc_Ca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\n"
+	(cd ".."; MODLUNIT=$(NRNUNITS) $(NOCMODL) iconc_Ca.mod -o "/home/szabobogi/BC_modells/CA1_Lee_2014/x86_64")
+
+./iconc_Ca.o: ./iconc_Ca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
